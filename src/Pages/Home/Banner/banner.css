@@ -3,3 +3,7 @@
     height: auto;
     width: auto;
 }
+
+.flex-col {
+    justify-content: space-between;
+}
