@@ -27,13 +27,16 @@ const Footer = () => {
     }
   ]
   return (
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 fGrid">
-      {
-        footerData.map(fData => <Footerprops
-          key={fData.id}
-          fData={fData}
-        ></Footerprops>)
-      }
+    <div>
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 fGrid">
+        {
+          footerData.map(fData => <Footerprops
+            key={fData.id}
+            fData={fData}
+          ></Footerprops>)
+        }
+      </div>
+      <small className="flex justify-around text-xl p-5"> @ Copyright All right Reserve By Rahad</small>
     </div>
   );
 };
