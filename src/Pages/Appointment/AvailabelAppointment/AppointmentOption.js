@@ -11,6 +11,7 @@ const AppointmentOption = ({ option, setTreatment }) => {
                     <p>{slots.length} {slots.length > 1 ? 'Spaces' : 'Space'} Available</p>
                     <div className="card-actions justify-center">
                         <label
+                            disabled={slots.length === 0}
                             htmlFor='appointment-modal'
                             className='btn btn-primary text-white font-bold'
                             onClick={() => setTreatment(option)}

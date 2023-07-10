@@ -30,6 +30,7 @@ const AvailabelAppointment = ({ selectedDate }) => {
                 <AppointmentModal
                     selectedDate={selectedDate}
                     treatment={treatment}
+                    setTreatment={setTreatment}
                 ></AppointmentModal>
             }
         </section>
